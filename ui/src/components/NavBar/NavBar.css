@@ -1,0 +1,12 @@
+ul.nav-bar-list {
+    /* border: 1px solid green; */
+    list-style-type: none;
+}
+
+.nav-bar-list li {
+    border: 5px solid #3b9583; 
+    width: 170px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
