@@ -1,0 +1,10 @@
+.skill-square {
+    width: 175px;
+    height: 175px;
+    margin: 0 0 10px 0;
+    position: relative;
+
+    background-color: #F8FAFC;
+    box-shadow: 0 4px 4px 1px #0000003c;
+    border-radius: 5%;
+}

@@ -1,12 +1,39 @@
-ul.nav-bar-list {
-    /* border: 1px solid green; */
-    list-style-type: none;
+header {
+    height: 20px;
+    background-color: #112726;
+    width: 100%;
+    color: #F8FAFC;
+    padding: 15px;
+    position: fixed;
+    text-align: left;
 }
 
-.nav-bar-list li {
-    border: 5px solid #3b9583; 
-    width: 170px;
-    height: 30px;
-    text-align: center;
-    font-size: 20px;
+.logo {
+    line-height: 20px;
+}
+
+.mouse-icon {
+    font-size: 32px;
+    line-height: 0px;
+}
+
+.navigation-links {
+    float: right;
+    padding-right: 50px;
+}
+
+.navigation-links a {
+    color: #F8FAFC;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+.navigation-links a:hover {
+    color: #F8FAFC;
+    text-decoration: underline;
+}
+
+.navigation-links a:active {
+    color: #0D9488;
+    text-decoration: underline;
 }

@@ -1,8 +1,14 @@
+* {
+  
+}
+
 body {
   margin: 0;
-  font-family: 'Inconsolata',  monospace;
+  font-family: 'Lato:wght@400',  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background-color: #F8FAFC;
 }
 
 code {
@@ -11,9 +17,10 @@ code {
 }
 
 h1 {
-  font-family: 'Inika', serif;
+  font-family: 'Lato:wght@700', serif;
 }
 
 .logo {
   font-family: 'Pacifico', cursive;
+  font-size: 20px;
 }

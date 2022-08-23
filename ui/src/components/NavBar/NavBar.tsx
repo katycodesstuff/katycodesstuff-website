@@ -6,24 +6,17 @@ function NavBar(props: Props) {
     const {} = props
 
     return (
-        <>
-        <h1>Technical</h1>
-        <ul className='nav-bar-list'>
-            <li>what i do</li>
-            <li>download my CV</li>
-            <li>my gitHub</li>
-            <li>contact me</li>
-        </ul>
-
-        <h1>Community</h1>
-        <ul className='nav-bar-list'>
-            <li>about</li>
-            <li>partnerships</li>
-            <li>twitter</li>
-            <li>blog</li>
-            <li>media appearances</li>
-        </ul>
-        </>
+        <header>
+            <span className='mouse-icon'>🐭</span>
+            <span className='logo'>KatyCodesStuff</span>
+            
+            <span className='navigation-links'>
+                <a href='/'>About</a>
+                <a href='/'>Hire me</a>
+                <a href='/'>Partnerships</a>
+                <a href='/'>Get in touch</a>
+                </span>
+        </header>
     )
 }
 

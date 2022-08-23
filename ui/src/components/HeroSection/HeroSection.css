@@ -1,0 +1,20 @@
+div.background {
+    background: linear-gradient(
+        to bottom,
+        #0D9488 0%,
+        #0D9488 50%,                                                                 
+        #ECF4F3 50%,
+        #ECF4F3 100%
+    );
+
+    height: 590px;
+    padding-top: 50px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 342px 515px 0px 86px;
+}
