@@ -1,6 +1,8 @@
 .skill-square {
     width: 175px;
     height: 175px;
+    min-width: 175px;
+    min-height: 175px;
     margin: 0 0 10px 0;
     position: relative;
 
