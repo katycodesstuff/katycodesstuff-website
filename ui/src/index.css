@@ -1,5 +1,6 @@
-* {
-  
+*::selection {
+  color: #ffffff;
+  background-color: #fc7e00;
 }
 
 body {
