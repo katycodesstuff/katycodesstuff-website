@@ -46,6 +46,7 @@ img {
     z-index: -1;
     background-color: #BAE1DB;
 }
+
 .katy::after {
     content: '';
     height: 332px;
@@ -56,4 +57,14 @@ img {
     position: absolute;
     z-index: -1;
     background-color: #76BDB2;
+}
+
+.logo-large {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 96px;
+    position: absolute;
+    margin: 0px 0px 0px 86px;
+    padding: 0px;
+    top: 194px;
 }

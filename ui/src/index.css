@@ -17,10 +17,11 @@ code {
 }
 
 h1 {
-  font-family: 'Lato:wght@700', serif;
+  font-family: 'Lato:wght@700', sans-serif;
 }
 
 .logo {
   font-family: 'Pacifico', cursive;
+  font-weight: 400;
   font-size: 20px;
 }

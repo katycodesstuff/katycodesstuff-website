@@ -10,6 +10,7 @@ function HeroSection(props: Props) {
 
     return (
         <div className='background'>
+            <h1 className='logo-large'>KatyCodesStuff</h1>
             <div className='skills-grid'>
                 <SkillSquare />
                 <SkillSquare />
