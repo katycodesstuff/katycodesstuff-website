@@ -1,0 +1,44 @@
+.skill-square {
+    width: 175px;
+    height: 175px;
+    min-width: 175px;
+    min-height: 175px;
+    margin: 0 0 10px 0;
+    position: relative;
+
+    background-color: #F8FAFC;
+    box-shadow: 0 4px 4px 1px #0000003c;
+    border-radius: 5%;
+}
+
+.highlighted-value {
+    position: relative;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 40px 5px 0px 5px;
+}
+
+.subtext {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 10px 10px 0px 10px;
+}
+
+.badge-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px 2px;
+    margin: 32px 5px 32px 5px;
+}
+
+.badge-grid img {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}

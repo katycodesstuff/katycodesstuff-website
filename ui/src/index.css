@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  font-family: 'Lato:wght@400',  sans-serif;
+  font-family: 'Lato',  sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -18,7 +19,8 @@ code {
 }
 
 h1 {
-  font-family: 'Lato:wght@700', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 .logo {
