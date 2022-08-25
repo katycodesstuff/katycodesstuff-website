@@ -39,3 +39,10 @@ header {
     color: #0D9488;
     text-decoration: underline;
 }
+
+/* Mobile view */
+@media only screen and (max-width: 780px) {
+    .navigation-links {
+        display: none;
+    }
+}

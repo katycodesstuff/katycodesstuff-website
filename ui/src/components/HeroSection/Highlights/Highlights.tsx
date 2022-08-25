@@ -25,10 +25,11 @@ export function SkillHighlight(props: SkillHighlightProps) {
 export function BadgesHighlight(props: BadgesHighlightProps) {
     const { icons } = props
 
+    let count = 0;
     return (
         <div className='skill-square'>
             <div className='badge-grid'>
-                {icons.map(i => <img src={i.asset} alt={i.altText} title={i.altText} />)}
+                {icons.map(i => <img src={i.asset} alt={i.altText} title={i.altText} key={count++}/>)}
             </div>
         </div>
     )

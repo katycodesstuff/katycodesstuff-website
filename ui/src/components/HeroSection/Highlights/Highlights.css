@@ -1,14 +1,13 @@
 .skill-square {
     width: 175px;
     height: 175px;
-    min-width: 175px;
-    min-height: 175px;
     margin: 0 0 10px 0;
     position: relative;
 
     background-color: #F8FAFC;
     box-shadow: 0 4px 4px 1px #0000003c;
     border-radius: 5%;
+    grid-area: "skill";
 }
 
 .highlighted-value {
@@ -48,4 +47,53 @@
     position: relative;
     height: 50px;
     width: 50px;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
+    .skill-square {
+        width: 148px;
+        height: 148px;
+        margin: 0 0 10px 0;
+        position: relative;
+    }
+    
+    .highlighted-value {
+        position: relative;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        margin: 20px 5px 0px 5px;
+    }
+    
+    .highlighted-value img {
+       height: 64px;
+       margin: 0px 0px 0px 0px;
+    }
+    
+    .subtext {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 400;
+        margin: 8px 10px 0px 10px;
+    }
+    
+    .badge-grid {
+        display: grid;
+        grid-template-columns: 40px 40px 40px;
+        grid-template-rows: auto auto;
+        gap: 2px 2px;
+        margin: 35px 0px 35px 12px;
+        padding: 0px;
+        width: 148px;
+    }
+    
+    .badge-grid img {
+        position: relative;
+        height: 40px;
+        width: 40px;
+    }
 }
