@@ -9,7 +9,6 @@ div.background {
 
     height: 590px;
     padding-top: 50px;
-    position: auto;
 }
 
 .skills-grid {
@@ -22,7 +21,7 @@ div.background {
     align-items: center;
 }
 
-img {
+.katy img {
     height: 332px;
     width: 332px;
     border-radius: 100%;
