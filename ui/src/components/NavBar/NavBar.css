@@ -11,6 +11,11 @@ header {
 }
 
 .logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 0px;
+    color: #F8FAFC;
     line-height: 20px;
 }
 

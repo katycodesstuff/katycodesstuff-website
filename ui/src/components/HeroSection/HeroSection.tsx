@@ -30,8 +30,8 @@ function HeroSection(props: Props) {
                 <BadgesHighlight icons={icons} />
                 <SkillHighlight HighlightedText='5' SubTextHtml='years experience <br />building enterprise-scale solutions' />
                 <SkillHighlight HighlightedText='18K+' SubTextHtml='Twitter followers' />
-                <div className='katy'><img src={katy} alt="Katy"></img></div>
             </div>
+            <div className='katy'><img src={katy} alt="Katy"></img></div>
         </div>
     )
 }

@@ -13,6 +13,10 @@ body {
   background-color: #F8FAFC;
 }
 
+p {
+  margin: 20px 64px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -21,10 +25,20 @@ code {
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  margin: 50px 64px;
+  color: #0D9488;
 }
 
-.logo {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  font-size: 20px;
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
+
+  h1 {
+    margin: 30px 24px;
+    font-size: 20px;
+  }
+
+  p {
+    margin: 20px 24px;
+    font-size: 10px;
+  }
 }
