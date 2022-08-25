@@ -28,6 +28,9 @@ function HomeMainPage(props: Props) {
         <h1>Latest Articles</h1>
 
         <p>Todo</p> */}
+        <hr></hr>
+        <h1>Site under construction! Bear with me while I finish it off 😊</h1>
+
         </>
     )
 }

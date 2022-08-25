@@ -36,12 +36,12 @@ h1 {
 
   h1 {
     margin: 30px 24px;
-    font-size: 20px;
+    font-size: 32px;
   }
 
   p {
     margin: 20px 24px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: inherit;
   }
 }

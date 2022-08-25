@@ -167,20 +167,20 @@ div.background {
     }
 
     .katy img {
-        height: 120px;
-        width: 120px;
+        height: 140px;
+        width: 140px;
     }
 
     .katy::before {
-        height: 120px;
-        width: 120px;
+        height: 140px;
+        width: 140px;
         top: -8px;
         left: -10px;
     }
     
     .katy::after {
-        height: 120px;
-        width: 120px;
+        height: 140px;
+        width: 140px;
         top: 8px;
         left: 10px;
     }
