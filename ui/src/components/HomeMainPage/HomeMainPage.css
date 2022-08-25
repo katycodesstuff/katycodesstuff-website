@@ -1,0 +1,16 @@
+.bigger-margin {
+    margin-top: 200px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .bigger-margin {
+        margin-top: inherit;
+    }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
+    .bigger-margin {
+        margin-top: 80px;
+    }
+}

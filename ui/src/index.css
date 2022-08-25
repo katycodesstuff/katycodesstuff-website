@@ -1,0 +1,47 @@
+*::selection {
+  color: #ffffff;
+  background-color: #fc7e00;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato',  sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background-color: #F8FAFC;
+}
+
+p {
+  margin: 20px 64px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 50px 64px;
+  color: #0D9488;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
+
+  h1 {
+    margin: 30px 24px;
+    font-size: 32px;
+  }
+
+  p {
+    margin: 20px 24px;
+    font-size: 12px;
+    font-weight: inherit;
+  }
+}

@@ -1,0 +1,53 @@
+header {
+    height: 20px;
+    background-color: #112726;
+    width: 100%;
+    color: #F8FAFC;
+    padding: 15px;
+    position: fixed;
+    text-align: left;
+    position: fixed;
+    z-index: 20;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 0px;
+    color: #F8FAFC;
+    line-height: 20px;
+}
+
+.mouse-icon {
+    font-size: 32px;
+    line-height: 0px;
+}
+
+.navigation-links {
+    float: right;
+    padding-right: 50px;
+}
+
+.navigation-links a {
+    color: #F8FAFC;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+.navigation-links a:hover {
+    color: #F8FAFC;
+    text-decoration: underline;
+}
+
+.navigation-links a:active {
+    color: #0D9488;
+    text-decoration: underline;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 780px) {
+    .navigation-links {
+        display: none;
+    }
+}
