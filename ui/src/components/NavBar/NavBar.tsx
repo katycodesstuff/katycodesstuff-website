@@ -1,9 +1,6 @@
 import './NavBar.css'
 
-interface Props {}
-
-function NavBar(props: Props) {
-    const {} = props
+function NavBar() {
 
     return (
         <header>

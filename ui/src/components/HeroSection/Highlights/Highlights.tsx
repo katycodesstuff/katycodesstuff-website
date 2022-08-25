@@ -11,12 +11,12 @@ interface BadgesHighlightProps {
 }
 
 export function SkillHighlight(props: SkillHighlightProps) {
-    const {HighlightedText, HighlightedImage: image, SubTextHtml} = props
+    const {HighlightedText, HighlightedImage: i, SubTextHtml} = props
 
     return (
         <div className='skill-square'>
             {HighlightedText ? <div className='highlighted-value'>{HighlightedText}</div>
-            : <div className='highlighted-value'>{<img src={image?.asset} alt={image?.altText} title={image?.altText} />}</div>}
+            : <div className='highlighted-value'>{<img src={i?.asset} alt={i?.altText} title={i?.altText} />}</div>}
             <div className='subtext' dangerouslySetInnerHTML={{__html: SubTextHtml}}></div>
         </div>
     )
