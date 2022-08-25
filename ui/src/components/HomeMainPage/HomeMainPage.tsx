@@ -1,9 +1,6 @@
 import './HomeMainPage.css'
 
-interface Props {}
-
-function HomeMainPage(props: Props) {
-    const {} = props
+function HomeMainPage() {
 
     return (
         <>

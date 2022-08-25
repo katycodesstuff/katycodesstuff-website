@@ -9,10 +9,7 @@ import k8s from '../../assets/icons/kubernetes.svg'
 import docker from '../../assets/icons/docker.svg'
 import ukflag from '../../assets/icons/uk.png'
 
-interface Props {}
-
-function HeroSection(props: Props) {
-    const {} = props
+function HeroSection() {
 
     let icons = []
     icons.push({asset:csharp, altText:'C#'})
