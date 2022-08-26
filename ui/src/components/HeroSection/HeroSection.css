@@ -14,7 +14,7 @@ div.background {
 .skills-grid {
     position: absolute;
     display: grid;
-    margin: 342px 86px 0px 86px;
+    margin: 350px 86px 0px 86px;
     column-gap: 49px;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 166px;
@@ -128,6 +128,7 @@ div.background {
         margin: 0px;
         padding: 0px;
         top: 16px;
+        white-space: nowrap;
     }
 
     .skills-grid {
