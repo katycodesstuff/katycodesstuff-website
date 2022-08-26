@@ -15,7 +15,7 @@ function HomeMainPage() {
         I have a DevOps mentality with extensive experience in managing infrastructure via Azure cloud, Docker and Kubernetes.
         </p>
         <p>
-        I started my Twitter account in September 2021 as a means to share my insights into being a Senior Developer and leader within tech. 
+        I started my Twitter account in September 2021 as a means to share my insights into being a Senior Developer and leader within tech.<br /> 
         Since then it has grown into a community of over 18,000!</p>
 
         {/* <h1>Latest Tweets</h1>
@@ -25,8 +25,6 @@ function HomeMainPage() {
         <h1>Latest Articles</h1>
 
         <p>Todo</p> */}
-        <hr></hr>
-        <h1>Site under construction! Bear with me while I finish it off 😊</h1>
 
         </>
     )
