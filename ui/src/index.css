@@ -31,6 +31,21 @@ h1 {
   color: #0D9488;
 }
 
+a {
+  color: #061D1C;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0D9488;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fc7e00;
+  text-decoration: underline;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 1000px) {
 
@@ -41,7 +56,7 @@ h1 {
 
   p {
     margin: 20px 24px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: inherit;
   }
 }

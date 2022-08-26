@@ -21,7 +21,7 @@ function HeroSection() {
 
     return (
         <div className='background'>
-            <h1 className='logo-large'>KatyCodesStuff</h1>
+            <h1 className='logo-large'>Katy Ashby</h1>
             <div className='skills-grid'>
                 <SkillHighlight HighlightedImage={{asset: ukflag, altText: 'UK'}} SubTextHtml='Senior Software Developer | Team Lead | Technical Lead' />
                 <BadgesHighlight icons={icons} />
