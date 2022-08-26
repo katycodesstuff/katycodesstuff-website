@@ -1,9 +1,6 @@
 import './Footer.css'
 
-interface Props {}
-
-function Footer(props: Props) {
-    const {} = props
+function Footer() {
 
     return (
         <footer>
