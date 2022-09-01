@@ -6,22 +6,37 @@ interface Props {
     summary: string
     link: string
     imgSrc?: string
+    loading: boolean
 }
 
 interface DefaultImgProps {
     title: string
+    id?: number
 }
 
 
 function Article(props: Props) {
-    const {title, date, summary, link, imgSrc } = props
+    const {title, date, summary, link, imgSrc, loading } = props
 
+    let randomNumber = Math.floor(Math.random()*3) + 1;
+    if (loading) {
+        return (
+            <div className='article article-loading'>
+                <DefaultImg title="" />
+                <div className='article-loading-title' />
+                <div className='article-loading-text' />
+                <div className='article-loading-date' />
+            </div>
+        )
+    }
     return (
         <a className='article' href={link}>
             <div className='article'>
-                {imgSrc ? <img src={imgSrc} alt={title} title={title} /> : <DefaultImg title={title} />}
+                {imgSrc 
+                ? <div className='article-img-wrapper'><img src={imgSrc} alt={title} title={title} /></div> 
+                : <DefaultImg title={title} id={randomNumber} />}
                 <h2>{title}</h2>
-                <p>{summary}</p>
+                <p>{summary.slice(0, 100)}...</p>
                 <span className='article-date'>{date}</span>
             </div>
         </a>
@@ -29,9 +44,9 @@ function Article(props: Props) {
 }
 
 function DefaultImg(props: DefaultImgProps) {
-    const {title} = props
+    const {title, id} = props
 
-    return <div className='article-default-img'>{title}</div>
+    return <div className={`article-default-img`}><span>{title}</span></div>
 }
 
 export default Article

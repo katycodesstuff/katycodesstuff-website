@@ -53,6 +53,10 @@ a:active {
   text-decoration: underline;
 }
 
+.app {
+  max-width: 1920px;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 1000px) {
 
@@ -65,5 +69,11 @@ a:active {
     margin: 20px 24px;
     font-size: 14px;
     font-weight: inherit;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .app {
+    margin: 0 auto;
   }
 }

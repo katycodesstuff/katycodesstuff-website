@@ -1,10 +1,9 @@
-import Article from '../Article/Article'
 import ArticlesContainer from '../ArticlesContainer/ArticlesContainer'
 import './HomeMainPage.css'
 
 function HomeMainPage() {
 
-    return (
+   return (
         <div className='home-main-page'>
         <h1>About Katy</h1>
         <p className='bigger-margin'>Hello! I’m Katy Ashby. <br />
@@ -26,26 +25,7 @@ function HomeMainPage() {
 
         <h1>Latest Articles</h1>
 
-        <ArticlesContainer>
-            <Article
-            title='Example title 1' 
-            summary='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-            link='https://www.google.com' 
-            date='2022-09-01' />
-
-            <Article
-            title='Example title 2' 
-            summary='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-            link='https://www.google.com' 
-            date='2022-09-01' />
-
-            <Article
-            title='Example title 3' 
-            summary='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-            link='https://www.google.com' 
-            date='2022-09-01' />
-        </ArticlesContainer>
-
+        <ArticlesContainer />
         </div>
     )
 }
