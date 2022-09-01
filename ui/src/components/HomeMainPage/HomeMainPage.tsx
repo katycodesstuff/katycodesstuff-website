@@ -1,9 +1,10 @@
+import ArticlesContainer from '../ArticlesContainer/ArticlesContainer'
 import './HomeMainPage.css'
 
 function HomeMainPage() {
 
-    return (
-        <>
+   return (
+        <div className='home-main-page'>
         <h1>About Katy</h1>
         <p className='bigger-margin'>Hello! I’m Katy Ashby. <br />
         I started my tech career as a Physics graduate,
@@ -20,13 +21,12 @@ function HomeMainPage() {
 
         {/* <h1>Latest Tweets</h1>
 
-        <p> Todo </p>
+        <p> Todo </p> */}
 
         <h1>Latest Articles</h1>
 
-        <p>Todo</p> */}
-
-        </>
+        <ArticlesContainer />
+        </div>
     )
 }
 
