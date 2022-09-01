@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { ArticleSummary, HashnodeClient } from '../../services/hashnode-client'
 import dayjs from 'dayjs'
 import Article from '../Article/Article'
+import config from '../../config.json'
 import './ArticlesContainer.css'
 
 function ArticlesContainer() {
@@ -28,7 +29,7 @@ function ArticlesContainer() {
             summary={article.brief} 
             date={dayjs(article.dateAdded).format('D MMMM YYYY') } 
             imgSrc={article.coverImage} 
-            link={article.slug} 
+            link={config.HASHNODE_BASE_URL + article.slug} 
             loading={loading} />)}
         </div>
     )

@@ -1,3 +1,5 @@
+import config from '../config.json';
+
 export interface ArticleSummary {
     title: string
     brief: string
@@ -55,7 +57,7 @@ export class HashnodeClient {
     }
 
     private async makeGqlRequest(query: string, variables = {}): Promise<any> {
-        const data = await fetch('https://api.hashnode.com/', {
+        const data = await fetch(config.HASHNODE_API_BASE_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
