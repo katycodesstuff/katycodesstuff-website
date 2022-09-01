@@ -44,7 +44,7 @@ function Article(props: Props) {
 }
 
 function DefaultImg(props: DefaultImgProps) {
-    const {title, id} = props
+    const {title} = props
 
     return <div className={`article-default-img`}><span>{title}</span></div>
 }
