@@ -36,6 +36,9 @@ a.article:active {
 .article img {
     width: 100%;
     border-radius: 5px 5px 0px 0px;
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; /*Firefox*/
 }
 
 .article-img-wrapper {
@@ -61,6 +64,9 @@ a.article:active {
     align-items: center;
     justify-items: center;
     line-height: 36px;
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; /*Firefox*/
 }
 
 .article-default-img[class$='1'] {
