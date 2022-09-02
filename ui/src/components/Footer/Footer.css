@@ -5,6 +5,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    margin-top: 80px;
 }
 
 footer h1 {

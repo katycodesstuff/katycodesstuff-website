@@ -11,7 +11,7 @@ import ukflag from '../../assets/icons/uk.png'
 
 function HeroSection() {
 
-    let icons = []
+    const icons = []
     icons.push({asset:csharp, altText:'C#'})
     icons.push({asset:angular, altText:'Angular'})
     icons.push({asset:react, altText:'React'})

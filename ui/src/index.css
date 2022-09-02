@@ -19,6 +19,10 @@ p {
   font-weight: 300;
 }
 
+.centered {
+  text-align: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -1,11 +1,14 @@
 import HeroSection from "../components/HeroSection/HeroSection"
-import HomeMainPage from "../components/HomeMainPage/HomeMainPage"
+import About from "../components/About/About"
+import ArticlesContainer from "../components/ArticlesContainer/ArticlesContainer"
 
 function Home() {
     return (
         <>
         <HeroSection />
-        <HomeMainPage />
+        <About />
+        <h1>Latest Articles</h1>
+        <ArticlesContainer />
         </>
     )
 }
