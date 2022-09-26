@@ -41,6 +41,9 @@ export class HashnodeClient {
             }
         }`;
         while (!allBlogsFetched) {
+            if (maxNumber && articles.length >= maxNumber) {
+                break;
+            }
             let response: HashnodeResponse = await this.makeGqlRequest(query, { page: page });
             articles.push(...response.data.user.publication.posts);
             if (response.data.user.publication.posts.length === 0) {
@@ -50,7 +53,6 @@ export class HashnodeClient {
         }
         if (maxNumber) {
             return articles
-           // .sort((a, b) => b.dateAdded. - a.dateAdded.getTime)
             .slice(0, maxNumber)
         }
         return articles;

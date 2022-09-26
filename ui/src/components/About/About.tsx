@@ -1,11 +1,11 @@
-import ArticlesContainer from '../ArticlesContainer/ArticlesContainer'
-import './HomeMainPage.css'
+import './About.css'
+import Data from '../../services/data'
 
-function HomeMainPage() {
+function About() {
 
    return (
-        <div className='home-main-page'>
-        <h1>About Katy</h1>
+        <div id='about'>
+        <h2>About Katy</h2>
         <p className='bigger-margin'>Hello! I’m Katy Ashby. <br />
         I started my tech career as a Physics graduate,
         who liked the “coding bits” of my course.<br />
@@ -17,17 +17,9 @@ function HomeMainPage() {
         </p>
         <p>
         I started my Twitter account in September 2021 as a means to share my insights into being a Senior Developer and leader within tech.<br /> 
-        Since then it has grown into a community of over 18,000!</p>
-
-        {/* <h1>Latest Tweets</h1>
-
-        <p> Todo </p> */}
-
-        <h1>Latest Articles</h1>
-
-        <ArticlesContainer />
+        Since then it has grown into a community of over {Data.twitterFollowerCount.long}!</p>
         </div>
     )
 }
 
-export default HomeMainPage
+export default About

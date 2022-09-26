@@ -10,8 +10,8 @@ function NavBar() {
             <span className='navigation-links'>
                 <a href='/'>About</a>
                 <a href='/'>Hire me</a>
-                <a href='/'>Partnerships</a>
-                <a href='/'>Get in touch</a>
+                <a href='/partnerships'>Partnerships</a>
+                <a href='/#footer'>Get in touch</a>
                 </span>
         </header>
     )

@@ -1,0 +1,27 @@
+.service-options-container {
+    max-width: 1200px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 64px;
+    gap: 20px;
+}
+
+.service-options-container-image {
+    width: 200px;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
+    .service-options-container {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 24px;
+        gap: 0px;
+    }
+
+    .service-options-container-image {
+        width: 100px;
+    }    
+}

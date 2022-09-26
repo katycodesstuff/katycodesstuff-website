@@ -4,7 +4,6 @@ header {
     width: 100%;
     color: #F8FAFC;
     padding: 15px;
-    position: fixed;
     text-align: left;
     position: fixed;
     z-index: 20;
@@ -17,11 +16,17 @@ header {
     margin: 0px 0px;
     color: #F8FAFC;
     line-height: 20px;
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; /*Firefox*/
 }
 
 .mouse-icon {
     font-size: 32px;
     line-height: 0px;
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; /*Firefox*/
 }
 
 .navigation-links {
