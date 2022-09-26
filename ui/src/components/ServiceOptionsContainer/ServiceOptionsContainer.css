@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 64px;
+    margin-bottom: 60px;
     gap: 20px;
 }
 

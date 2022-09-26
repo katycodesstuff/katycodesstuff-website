@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './NavBar.css'
 
 function NavBar() {
@@ -8,10 +9,9 @@ function NavBar() {
             <span className='logo'>KatyCodesStuff</span>
             
             <span className='navigation-links'>
-                <a href='/'>About</a>
-                <a href='/'>Hire me</a>
-                <a href='/partnerships'>Partnerships</a>
-                <a href='/#footer'>Get in touch</a>
+                <NavLink to='/' className={({ isActive }) => (isActive ? 'navigation-links-active' : '')}>About</NavLink>
+                <NavLink to='/partnerships' className={({ isActive }) => (isActive ? 'navigation-links-active' : '')}>Partnerships</NavLink>
+                {/* <NavLink to='/random' className={({ isActive }) => (isActive ? 'navigation-links-active' : '')}>Get in touch</NavLink> */}
                 </span>
         </header>
     )

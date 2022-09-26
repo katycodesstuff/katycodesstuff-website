@@ -50,6 +50,11 @@ header {
     text-decoration: underline;
 }
 
+.navigation-links-active {
+    color: #F8FAFC !important;
+    text-decoration: underline !important;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 780px) {
     .navigation-links {

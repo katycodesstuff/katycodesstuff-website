@@ -19,7 +19,7 @@ function NotFound() {
     return (
         <DefaultPage>
         <p className="centered">Oops, this page doesn't exist.</p>
-        <h1>Latest Articles</h1>
+        <h2>Latest Articles</h2>
         <ArticlesContainer />
         </DefaultPage>
     )
