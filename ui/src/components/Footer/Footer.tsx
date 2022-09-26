@@ -3,7 +3,7 @@ import './Footer.css'
 function Footer() {
 
     return (
-        <footer>
+        <footer id='footer'>
             <div className='footer-flex-item'>
             <h1>Katy Ashby</h1>
             <p>This website was designed and created by Katy using React, TypeScript and hosted on Netlify.</p>

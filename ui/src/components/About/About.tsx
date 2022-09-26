@@ -1,10 +1,11 @@
 import './About.css'
+import Data from '../../services/data'
 
 function About() {
 
    return (
         <div id='about'>
-        <h1>About Katy</h1>
+        <h2>About Katy</h2>
         <p className='bigger-margin'>Hello! I’m Katy Ashby. <br />
         I started my tech career as a Physics graduate,
         who liked the “coding bits” of my course.<br />
@@ -16,7 +17,7 @@ function About() {
         </p>
         <p>
         I started my Twitter account in September 2021 as a means to share my insights into being a Senior Developer and leader within tech.<br /> 
-        Since then it has grown into a community of over 18,000!</p>
+        Since then it has grown into a community of over {Data.twitterFollowerCount.long}!</p>
         </div>
     )
 }

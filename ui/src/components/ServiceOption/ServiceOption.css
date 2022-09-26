@@ -1,3 +1,69 @@
 .service-option {
-    
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+    height: 340px;
+    width: 260px;
+    border-radius: 5px;
+    background-color: #F8FAFC;
+}
+
+.service-option-ranking-1 {
+    border: 1px solid #BAE1DB
+}
+
+.service-option-ranking-2 {
+    border: 5px solid #BAE1DB
+}
+
+.service-option-ranking-3 {
+    border: 5px solid #0D9488
+}
+
+.service-option-title {
+    align-self: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.service-option-price {
+    align-self: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.service-option-description {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.service-option-description:has(ul) {
+    text-align: left;
+}
+.service-option-description ul {
+    list-style: none;
+}
+
+.service-option-description li {
+    padding-left: 1rem;
+    text-indent: -0.75rem;
+}
+
+.service-option-description li.features::before {
+    content: '✅ ';
+}
+
+.service-option-description li.missing::before {
+    content: '❌ ';
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1000px) {
+    .service-option {
+        margin: 30px 0px;
+    }
+
+    .service-option-description {
+        font-size: 14px;
+        font-weight: 400;
+    }
 }

@@ -7,7 +7,7 @@ function Home() {
         <>
         <HeroSection />
         <About />
-        <h1>Latest Articles</h1>
+        <h2>Latest Articles</h2>
         <ArticlesContainer />
         </>
     )
