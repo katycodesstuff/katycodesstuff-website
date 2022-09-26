@@ -13,7 +13,7 @@ function ServiceOptionsContainer(props: Props) {
 
     return (
         <div className='service-options-container'>
-        <img className='service-options-container-image' src={headerImage?.imageSrc} title={headerImage?.imageTitle} alt={headerImage?.imageTitle} width='200px'></img>  
+        {headerImage ? <img className='service-options-container-image' src={headerImage?.imageSrc} title={headerImage?.imageTitle} alt={headerImage?.imageTitle}></img>:<></>}
         {children}
         </div>
     )

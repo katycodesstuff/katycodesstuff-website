@@ -9,10 +9,9 @@ function Partnerships() {
     <DefaultPage>
         <div className='centered'>
             <h1>Partnerships</h1>
+            
             <p>Do you want to get your message out to a large audience of {Data.twitterFollowerCount.long}+ Twitter users?</p>
-
             <p>Do you think my content aligns with your brand? Let’s partner up!</p>
-
             <p>I offer a range of options below where we can collaborate on a post, video or article.</p>
             
             <h2>Sponsored Tweets</h2>

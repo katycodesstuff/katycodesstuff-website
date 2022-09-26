@@ -4,20 +4,29 @@ div.article  {
     background-color: #F8FAFC;
     border-bottom: 5px solid #BAE1DB;
     text-align: left;
+    display: grid;
+    grid-template-rows: 53% 17% 20% 10%;
 }
 
 div.article:hover {
     border-bottom: 5px solid #0D9488;
 }
 
+.article-grid-item-title {
+    align-self: flex-end;
+}
+
+.article-grid-item {
+    align-self: center;
+}
+
 .article h2 {
-    margin: 20px 20px;
-    padding-top: 14px;
+    margin: 5px 20px;
     font-size: 18px;
 }
 
 .article p {
-    margin: 20px 50px 20px 20px;
+    margin: 10px 50px 10px 20px;
 }
 
 a.article {

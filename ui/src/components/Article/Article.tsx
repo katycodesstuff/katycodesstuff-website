@@ -31,12 +31,12 @@ function Article(props: Props) {
     return (
         <a className='article' href={link}>
             <div className='article'>
-                {imgSrc 
+                <div>{imgSrc 
                 ? <ArticleImg title={title} imgSrc={imgSrc} /> 
-                : <DefaultImg title={title} id={randomNumber} />}
-                <h2>{title}</h2>
-                <p>{summary.slice(0, 100)}...</p>
-                <span className='article-date'>{date}</span>
+                : <DefaultImg title={title} id={randomNumber} />}</div>
+                <div className='article-grid-item-title'><h2>{title}</h2></div>
+                <div className='article-grid-item'><p>{summary.slice(0, 100)}...</p></div>
+                <div className='article-grid-item'><span className='article-date'>{date}</span></div>
             </div>
         </a>
     )
