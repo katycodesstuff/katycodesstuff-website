@@ -3,10 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import ArticlesContainer from "../components/ArticlesContainer/ArticlesContainer"
 import DefaultPage from "../components/DefaultPage/DefaultPage"
 
-interface Props {}
-
-function NotFound(props: Props) {
-    const {} = props
+function NotFound() {
 
     const routeProps = useParams();
     const navigate = useNavigate();
@@ -25,7 +22,6 @@ function NotFound(props: Props) {
         <h1>Latest Articles</h1>
         <ArticlesContainer />
         </DefaultPage>
-        
     )
 }
 
