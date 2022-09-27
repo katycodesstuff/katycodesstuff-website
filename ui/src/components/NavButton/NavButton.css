@@ -1,21 +1,25 @@
 div.navigation-button {
     padding: 12px 0px;
-    margin-top: 20px;
     width: 200px;
     text-align: center;
     background-color: #BAE1DB;
     border-radius: 5px;
-    float: left;
 }
 
 a.navigation-button {
     color: #061D1C;
     font-size: 16px;
     text-decoration: none;
-    height: 100%;
-    width: 100%;
+    width: 200px;
+    margin: 20px 100px 0px 0px;
 }
 
 div.navigation-button:hover {
     background-color: #76BDB2;
+}
+
+@media only screen and (max-width: 1000px) {
+    a.navigation-button {
+        margin: 20px 50px 0px 50px;
+    }    
 }
