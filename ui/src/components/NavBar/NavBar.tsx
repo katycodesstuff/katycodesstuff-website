@@ -7,6 +7,7 @@ import './NavBar.css'
 
 const navLinks = [
     { to: '/', title: 'About' },
+    { to: '/view-articles', title: 'Articles' },
     { to: '/partnerships', title: 'Partnerships' }
 ]
 

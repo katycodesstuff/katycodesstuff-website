@@ -1,6 +1,6 @@
 .articles-container {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin: 0px 64px;
     gap: 32px;
@@ -9,7 +9,7 @@
 @media only screen and (max-width: 1000px) {
 
     .articles-container {
-        flex-direction: column;
+        flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
     }

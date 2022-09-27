@@ -8,7 +8,7 @@ function Home() {
         <HeroSection />
         <About />
         <h2>Latest Articles</h2>
-        <ArticlesContainer />
+        <ArticlesContainer numberOfArticles={3} />
         </>
     )
 }
