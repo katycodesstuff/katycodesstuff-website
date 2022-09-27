@@ -17,10 +17,10 @@ function NotFound() {
         func();
     }, [ routeProps.id, navigate ]);
     return (
-        <DefaultPage>
-        <p className="centered">Oops, this page doesn't exist.</p>
+        <DefaultPage centeredText={true}>
+        <h1>Oops, this page doesn't exist.</h1>
         <h2>Latest Articles</h2>
-        <ArticlesContainer />
+        <ArticlesContainer numberOfArticles={3} />
         </DefaultPage>
     )
 }
