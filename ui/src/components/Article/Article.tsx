@@ -60,7 +60,7 @@ function LoadingArticle() {
             <DefaultImg title='' />
             <div className='article-loading-title' />
             <div className='article-loading-text' />
-            <div className='article-loading-date' />
+            <span className='article-loading-date' />
         </div>
     )
 }

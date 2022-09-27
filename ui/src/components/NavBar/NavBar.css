@@ -73,5 +73,6 @@ header {
         display: inline;
         float: right;
         padding-right: 10px;
+        cursor: pointer;
     }
 }
