@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import NavMenu from '../NavMenu/NavMenu'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import ClearIcon from '@mui/icons-material/Clear';
 import './NavBar.css'
 
 const navLinks = [
@@ -22,7 +24,7 @@ function NavBar() {
                     {navLinks.map((link, i) => <NavLink key={i} to={link.to} className={activePageFunc}>{link.title}</NavLink>)}
                 </span>
                 <span className='navigation-menu-icon' onClick={() => onToggleMenu(setNavMenuIsToggled)}>
-                    🔗
+                    {navMenuIsToggled ? <ClearIcon /> : <MenuRoundedIcon />}
                 </span>
             </div>
             <NavMenu links={navLinks} isVisible={navMenuIsToggled} setToggle={setNavMenuIsToggled}></NavMenu>
