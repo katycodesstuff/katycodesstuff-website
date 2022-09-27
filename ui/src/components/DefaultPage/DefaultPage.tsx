@@ -1,11 +1,16 @@
 import { PropsWithChildren } from 'react'
 import './DefaultPage.css'
 
-function DefaultPage(props: PropsWithChildren) {
-    const {children} = props
+interface Props extends PropsWithChildren {
+    centeredText?: boolean
+}
+
+function DefaultPage(props: Props) {
+    const {centeredText, children} = props
+    const isCentered = centeredText ?? true
 
     return (
-        <div className='default-page'>
+        <div className={`default-page ${isCentered ? 'centered' : ''}`}>
             {children}
         </div>
     )

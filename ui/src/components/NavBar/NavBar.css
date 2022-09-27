@@ -41,7 +41,7 @@ header {
 .navigation-links a {
     color: #F8FAFC;
     text-decoration: none;
-    padding-right: 25px;
+    padding-right: 35px;
 }
 
 .navigation-links a:hover {
@@ -54,9 +54,10 @@ header {
     text-decoration: underline;
 }
 
-.navigation-links-active {
-    color: #F8FAFC !important;
-    text-decoration: underline !important;
+.navigation-links-active::after {
+    content: "📌";
+    text-decoration: none !important;
+    position: absolute;
 }
 
 .navigation-menu-icon {

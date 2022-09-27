@@ -4,21 +4,26 @@ import dayjs from 'dayjs'
 import Article from '../Article/Article'
 import config from '../../config.json'
 import './ArticlesContainer.css'
+import NavButton from '../NavButton/NavButton'
 
-function ArticlesContainer() {
+interface Props {
+    numberOfArticles?: number
+}
+
+function ArticlesContainer(props: Props) {
     const [articles, setArticles] = useState<ArticleSummary[]>([{} as ArticleSummary, {} as ArticleSummary, {} as ArticleSummary]);
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         async function func(): Promise<void> {
             const client = new HashnodeClient();
-            const articles = await client.fetchBlogPosts(3); 
+            const articles = await client.fetchBlogPosts(props.numberOfArticles); 
 
             setArticles(articles);
             setLoading(false);
         }
         func();
-    }, []); // [] means only load once on initial page render
+    }, [props.numberOfArticles]); // [] means only load once on initial page render
     
     return (
         <div className='articles-container'>
@@ -31,6 +36,7 @@ function ArticlesContainer() {
             imgSrc={article.coverImage} 
             link={config.HASHNODE_BASE_URL + article.slug} 
             loading={loading} />)}
+            {props.numberOfArticles ? <NavButton href='/view-articles' title='See all articles' /> : <></>}
         </div>
     )
 }

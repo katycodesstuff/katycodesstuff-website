@@ -30,6 +30,7 @@ div.article:hover {
 }
 
 a.article {
+    flex: 1 1 25%;
     color: inherit;
     text-decoration: inherit;
 }

@@ -5,17 +5,22 @@ import { Routes, Route } from "react-router-dom"
 import NotFound from './pages/NotFound'
 import Partnerships from './pages/Partnerships'
 import Page from './components/Page/Page'
+import ListArticles from './pages/ListArticles'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <div className='app'>
       <NavBar />
-       <Routes>
-          <Route path='/' element={RenderPage("Home", <Home />)}/>
-          <Route path='/page-not-found' element={RenderPage("Page Not Found", <NotFound />)} />
-          <Route path='*' element={RenderPage("Page Not Found", <NotFound />)} />
-          <Route path='/partnerships' element={RenderPage("Partnerships", <Partnerships />)} />
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+              <Route path='/' element={RenderPage("Home", <Home />)}/>
+              <Route path='/page-not-found' element={RenderPage("Page Not Found", <NotFound />)} />
+              <Route path='*' element={RenderPage("Page Not Found", <NotFound />)} />
+              <Route path='/partnerships' element={RenderPage("Partnerships", <Partnerships />)} />
+              <Route path='/view-articles' element={RenderPage("Articles", <ListArticles />)} />
+            </Routes>
+        </ScrollToTop>
       <Footer />
     </div>
   );
