@@ -7,6 +7,7 @@
     width: 60%;
     text-align: center;
     background-color: #BAE1DB;
+    border-radius: 5px;
 }
 
 .navigation-menu-item a {
@@ -19,7 +20,7 @@
 
 .navigation-menu-active::after {
     content: "📌 You are here!";
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     color: #061D1C;
@@ -27,7 +28,7 @@
     left: 60vw;
     cursor: none;
     pointer-events: none;
-    transform: translateY(-8px) translateX(15px) rotate(-8deg);
+    transform: translateY(-16px) translateX(10px) rotate(-8deg);
 }
 .navigation-menu-active::after a:hover {
     text-decoration: none;

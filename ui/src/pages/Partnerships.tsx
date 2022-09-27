@@ -17,7 +17,7 @@ function Partnerships() {
 
         <ServiceOptionsContainer headerImage={{imageSrc: Twitter, imageTitle:'Twitter logo'}}>
             <ServiceOption title='1x TWEET' price={250} currency='£' ranking={1} features={['Twitter profile tag', 'Uploaded image', 'Link to your content']} missing={['Threads']}/>
-            <ServiceOption title='1x THREAD' price={300} currency='£' ranking={2}  features={['Twitter profile tag', 'Uploaded image', 'Link to your content', 'Up to 6 Tweets in a Thread']}/>
+            <ServiceOption title='1x THREAD' price={300} currency='£' ranking={2} features={['Twitter profile tag', 'Uploaded image', 'Link to your content', 'Up to 6 Tweets in a Thread']}/>
             <ServiceOption title='4x TWEETS' price={900} currency='£' ranking={3} features={['Twitter profile tag', 'Uploaded image', 'Link to your content', 'Use your Tweets at any time!']} />
         </ServiceOptionsContainer>
 

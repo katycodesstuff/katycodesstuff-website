@@ -4,6 +4,7 @@ import dayjs from 'dayjs'
 import Article from '../Article/Article'
 import config from '../../config.json'
 import './ArticlesContainer.css'
+import NavButton from '../NavButton/NavButton'
 
 interface Props {
     numberOfArticles?: number
@@ -35,6 +36,7 @@ function ArticlesContainer(props: Props) {
             imgSrc={article.coverImage} 
             link={config.HASHNODE_BASE_URL + article.slug} 
             loading={loading} />)}
+            {props.numberOfArticles ? <NavButton href='/view-articles' title='See all articles' /> : <></>}
         </div>
     )
 }
