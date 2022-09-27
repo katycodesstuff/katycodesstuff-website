@@ -135,8 +135,10 @@ a.article:active {
     background-color: #afafaf;
     height: 10px;
     width: 100px;
-    float: right;
-    margin: 50px 20px 0px 0px;
+    
+    justify-self: flex-end;
+    align-self: center;
+    margin: 0px 20px 0px 0px;
 }
 
 div.article-loading {

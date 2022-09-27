@@ -1,11 +1,15 @@
 header {
     height: 20px;
-    background-color: #112726;
     width: 100%;
     color: #F8FAFC;
-    padding: 15px;
     text-align: left;
     position: fixed;
+    z-index: 20;
+}
+
+.header-bar {
+    padding: 15px;
+    background-color: #112726;
     z-index: 20;
 }
 
@@ -55,9 +59,20 @@ header {
     text-decoration: underline !important;
 }
 
+.navigation-menu-icon {
+    display: none;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 780px) {
     .navigation-links {
         display: none;
+    }
+
+    .navigation-menu-icon {
+        display: inline;
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
     }
 }
