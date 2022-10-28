@@ -1,7 +1,7 @@
 let data = {
     twitterFollowerCount: {
-        long: "19,000",
-        short: "19K"
+        long: "20,000",
+        short: "20K"
     }
 }
 
