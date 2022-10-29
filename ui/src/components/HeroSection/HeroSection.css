@@ -1,6 +1,6 @@
 div.background {
     background: linear-gradient(
-        to bottom,
+        170deg,
         var(--primary-colour) 0%,
         var(--primary-colour) 45%,
         var(--grey-colour) 45%,
@@ -8,61 +8,15 @@ div.background {
     );
 
     height: 490px;
-    padding: 110px 0px 0px 0px;
+    padding: 180px 0px 0px 0px;
 }
 
 .skills-grid {
     display: flex;
-    margin: 240px 86px 0px 86px;
-    column-gap: 49px;
+    margin: 210px 86px 0px 86px;
+    column-gap: 40px;
     align-items: center;
     justify-content: flex-end;
-}
-
-
-.katy img {
-    height: 332px;
-    width: 332px;
-    border-radius: 100%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    transition-duration: 500ms;
-}
-
-.katy {
-    z-index: 2;
-    position: relative;
-    top: 260px;
-    float: right;
-    height: 332px;
-    width: 332px;
-    margin: 0px 80px 0px 0px;
-}
-
-.katy::before {
-    content: '';
-    height: 332px;
-    width: 332px;
-    border-radius: 100%;
-    top: -25px;
-    left: -30px;
-    position: absolute;
-    z-index: -1;
-    background-color: var(--secondary-colour);
-    transition-duration: 500ms;
-}
-
-.katy::after {
-    content: '';
-    height: 332px;
-    width: 332px;
-    border-radius: 100%;
-    top: 25px;
-    left: 30px;
-    position: absolute;
-    z-index: -1;
-    background-color: var(--tertiary-colour);
-    transition-duration: 500ms;
 }
 
 .logo-large {
@@ -72,39 +26,13 @@ div.background {
     position: absolute;
     margin: 0px 0px 0px 86px;
     padding: 0px;
-    top: 144px;
-    color: #061D1C;
+    top: 200px;
+    color: var(--dark-colour);
+    transform: rotateZ(-10deg);
 }
 
-/* To avoid picture getting cropped off screen */
-@media only screen and (max-width: 1400px) {
-    .katy {
-        z-index: 2;
-        position: relative;
-        top: 600px;
-        left: 0px;
-        height: 332px;
-        width: 332px;
-        margin: 0px 0px 0px 64px;
-    }
-
-    
-    .katy img {
-        transform: scale(0.7);
-    }
-
-    .katy::before {
-        transform: scale(0.7);
-    }
-    
-    .katy::after {
-        transform: scale(0.7);
-    }
-  }
-
 /* Mobile view */
-  @media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 1000px) {
     div.background {
         text-align: center;
         background: linear-gradient(
@@ -127,6 +55,7 @@ div.background {
         padding: 0px;
         top: 16px;
         white-space: nowrap;
+        transform: rotateZ(0deg);
     }
 
     .skills-grid {
@@ -142,30 +71,4 @@ div.background {
         width: 100%;
     }
 
-    .katy {
-        top: 440px;
-        left: 0px;
-        height: 120px;
-        width: 120px;
-        margin: 0px 64px 0px 0px;
-    }
-
-    .katy img {
-        height: 140px;
-        width: 140px;
-    }
-
-    .katy::before {
-        height: 140px;
-        width: 140px;
-        top: -8px;
-        left: -10px;
-    }
-    
-    .katy::after {
-        height: 140px;
-        width: 140px;
-        top: 8px;
-        left: 10px;
-    }
-  }
+}

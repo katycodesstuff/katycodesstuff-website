@@ -1,17 +1,20 @@
-.bigger-margin {
-    margin-top: 200px;
+#about {
+    background-color: var(--grey-colour);
+    padding: 5px 0px 60px 0px;
 }
 
 .about-section {
     text-align: left;
-    width: 30vw;
-    padding: 60px 100px;
+    flex-basis: 1;
+    min-width: 400px;
+    max-width: 600px;
 }
 
 .about-section h3 {
     font-family: var(--title-font-family);
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 400;
+    color: var(--primary-colour);
 }
 
 .about-section p {
@@ -19,24 +22,78 @@
     font-weight: 400;
 }
 
-.about-container {
-    display: flex;
-    padding-left: 124px;
-    justify-content: flex-start;
-    margin: 60px 100px;
-    background-color: var(--secondary-colour);
-    border-radius: 60px;
+.about-section ul {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 84px;
 }
 
-@media only screen and (min-width: 1400px) {
-    .bigger-margin {
-        margin-top: inherit;
-    }
+.about-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 124px;
+    justify-content: space-around;
+    justify-self: center;
+    align-items: center;
+    margin: 40px 180px;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--light-colour);
+    border-right: var(--secondary-colour) 4px solid;
+    border-left: var(--secondary-colour) 4px solid;
+    border-radius: 40px;
+}
+
+.katy img {
+    width: 100%;
+    min-width: 100px;
+    max-height: 332px;
+    border-radius: 100%;
+    transition-duration: 500ms;
+}
+
+.katy {
+    z-index: 2;
+    position: relative;
+    margin: 20px;
+    flex-shrink: 1 1 0;
 }
 
 /* Mobile view */
 @media only screen and (max-width: 1000px) {
-    .bigger-margin {
-        margin-top: 80px;
+    .about-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        justify-self: center;
+        align-items: center;
+        margin: 10px 20px;
+        gap: 10px;
+    }
+
+    .about-section p {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0px 40px;
+    }
+
+    .about-section h3 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .about-section ul {
+        list-style-type: none;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .katy img {
+        max-height: 160px;
+    }
+
+    .katy {
+        min-height: 160px;
     }
 }

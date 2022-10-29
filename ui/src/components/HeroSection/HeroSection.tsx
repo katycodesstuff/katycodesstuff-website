@@ -22,10 +22,10 @@ function HeroSection() {
 
     return (
         <div className='background'>
-            <h1 className='logo-large'>Hi! I'm Katy.</h1>
+            <h1 className='logo-large'>Katy Ashby</h1>
             <div className='skills-grid'>
-                <SkillHighlight HighlightedImage={{asset: ukflag, altText: 'UK'}} SubTextHtml='UK-based Lead Software Engineer' />
                 <BadgesHighlight icons={icons} />
+                <SkillHighlight HighlightedImage={{asset: ukflag, altText: 'UK'}} SubTextHtml='UK-based Lead Software Engineer' />
                 <SkillHighlight HighlightedText='5' SubTextHtml='years experience <br />building enterprise-scale solutions' />
                 <SkillHighlight HighlightedText={`${Data.twitterFollowerCount.short}+`} SubTextHtml='Twitter followers' />
             </div>
