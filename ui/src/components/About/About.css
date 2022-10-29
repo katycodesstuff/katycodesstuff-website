@@ -2,6 +2,32 @@
     margin-top: 200px;
 }
 
+.about-section {
+    text-align: left;
+    width: 30vw;
+    padding: 60px 100px;
+}
+
+.about-section h3 {
+    font-family: var(--title-font-family);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.about-section p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about-container {
+    display: flex;
+    padding-left: 124px;
+    justify-content: flex-start;
+    margin: 60px 100px;
+    background-color: var(--secondary-colour);
+    border-radius: 60px;
+}
+
 @media only screen and (min-width: 1400px) {
     .bigger-margin {
         margin-top: inherit;

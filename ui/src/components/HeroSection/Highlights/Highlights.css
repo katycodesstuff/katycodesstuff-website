@@ -1,11 +1,17 @@
 .skill-square {
-    width: 175px;
-    height: 175px;
-    margin: 0 0 10px 0;
+    width: 180px;
+    height: 180px;
     position: relative;
-    background-color: #F8FAFC;
-    box-shadow: 0 4px 4px 1px #0000003c;
-    border-radius: 5%;
+    background-color: var(--light-colour);
+    border-radius: 60px;
+    border-bottom: var(--secondary-colour) 4px solid;
+}
+
+.skill-square:hover {
+    background-color: var(--secondary-colour);
+    border-bottom-color: var(--tertiary-colour);
+    transform: scale(1.1);
+    transition-duration: 200ms;
 }
 
 .highlighted-value {
@@ -52,10 +58,10 @@
     .skill-square {
         width: 148px;
         height: 148px;
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
         position: relative;
     }
-    
+
     .highlighted-value {
         position: relative;
         text-align: center;
@@ -64,12 +70,12 @@
         line-height: 64px;
         margin: 20px 5px 0px 5px;
     }
-    
+
     .highlighted-value img {
        height: 64px;
        margin: 0px 0px 0px 0px;
     }
-    
+
     .subtext {
         position: relative;
         text-align: center;
@@ -78,7 +84,7 @@
         font-weight: 400;
         margin: 8px 10px 0px 10px;
     }
-    
+
     .badge-grid {
         display: grid;
         grid-template-columns: 40px 40px 40px;
@@ -88,7 +94,7 @@
         padding: 0px;
         width: 148px;
     }
-    
+
     .badge-grid img {
         position: relative;
         height: 40px;
