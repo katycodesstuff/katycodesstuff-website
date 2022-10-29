@@ -1,5 +1,5 @@
 footer {
-    background-color: #ECF4F3;
+    background-color: var(--grey-colour);
     padding: 60px 80px 30px 80px;
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@ footer {
 }
 
 footer h1 {
-    color: #061D1C;
+    color: var(--dark-colour);
     font-family: 'Pacifico', cursive;
     font-weight: 400;
     font-size: 40px;
@@ -33,7 +33,7 @@ footer p.footer-attributes  {
 @media only screen and (max-width: 1000px) {
 
     footer h1 {
-        color: #061D1C;
+        color: var(--dark-colour);
         font-family: 'Pacifico', cursive;
         font-weight: 400;
         font-size: 32px;
