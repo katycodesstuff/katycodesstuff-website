@@ -6,12 +6,12 @@
     padding: 15px 0px;
     width: 60%;
     text-align: center;
-    background-color: #BAE1DB;
+    background-color: var(--secondary-colour);
     border-radius: 5px;
 }
 
 .navigation-menu-item a {
-    color: #061D1C;
+    color: var(--dark-colour);
     font-size: 16px;
     text-decoration: none;
     height: 100%;
@@ -23,7 +23,7 @@
     font-size: 16px;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
-    color: #061D1C;
+    color: var(--dark-colour);
     position: absolute;
     left: 60vw;
     cursor: none;
@@ -36,7 +36,7 @@
 
 .navigation-menu-exit-icon {
     cursor: pointer;
-    color: #061D1C;
+    color: var(--dark-colour);
 }
 
 /* Mobile view */
@@ -51,7 +51,7 @@
         padding: 40px 0px 0px 0px;
         height: 100vh;
         width: 100%;
-        background-color: #ECF4F3;
+        background-color: var(--light-colour);
         animation:slide-down 0.2s linear both;
         z-index: -1;
     }

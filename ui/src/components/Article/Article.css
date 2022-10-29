@@ -1,15 +1,15 @@
 div.article  {
     max-width: 390px;
     height: 450px;
-    background-color: #F8FAFC;
-    border-bottom: 5px solid #BAE1DB;
+    background-color: var(--light-colour);
+    border-bottom: 5px solid var(--secondary-colour);
     text-align: left;
     display: grid;
     grid-template-rows: 53% 17% 20% 10%;
 }
 
 div.article:hover {
-    border-bottom: 5px solid #0D9488;
+    border-bottom: 5px solid var(--primary-colour);
 }
 
 .article-grid-item-title {
@@ -65,7 +65,7 @@ a.article:active {
     left: 0px;
     max-width: 390px;
     height: 240px;
-    background-color: #BAE1DB;
+    background-color: var(--secondary-colour);
     text-align: center;
     font-size: 32px;
     font-family: 'Pacifico', cursive;
@@ -77,18 +77,6 @@ a.article:active {
     user-select: none;
     -webkit-user-select: none; /*Safari*/
     -moz-user-select: none; /*Firefox*/
-}
-
-.article-default-img[class$='1'] {
-    background-color: #BAE1DB;
-}
-
-.article-default-img[class$='2'] {
-    background-color: #73d8d0;
-}
-
-.article-default-img[class$='3'] {
-    background-color: #0D9488;
 }
 
 .article-date {

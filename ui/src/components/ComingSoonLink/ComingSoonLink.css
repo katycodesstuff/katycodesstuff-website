@@ -1,0 +1,41 @@
+.coming-soon-link {
+    color: var(--dark-colour);
+    text-decoration: underline;
+}
+
+.coming-soon-link:hover {
+    color: var(--primary-colour);
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.coming-soon-link:active {
+    color: var(--complementary-colour);
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 95px;
+    background-color: var(--dark-colour);
+    color: var(--light-colour);
+    font-size: 12px;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 60%;
+    margin-left: -55px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.9;
+}

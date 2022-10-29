@@ -1,7 +1,6 @@
 import './HeroSection.css'
 import { SkillHighlight, BadgesHighlight } from './Highlights/Highlights'
 import Data from '../../services/data'
-import katy from '../../assets/katy.png'
 import csharp from '../../assets/icons/csharp.svg'
 import react from '../../assets/icons/react.svg'
 import angular from '../../assets/icons/angular.svg'
@@ -24,12 +23,11 @@ function HeroSection() {
         <div className='background'>
             <h1 className='logo-large'>Katy Ashby</h1>
             <div className='skills-grid'>
-                <SkillHighlight HighlightedImage={{asset: ukflag, altText: 'UK'}} SubTextHtml='Senior Software Developer | Team Lead | Technical Lead' />
                 <BadgesHighlight icons={icons} />
+                <SkillHighlight HighlightedImage={{asset: ukflag, altText: 'UK'}} SubTextHtml='UK-based Lead Software Engineer' />
                 <SkillHighlight HighlightedText='5' SubTextHtml='years experience <br />building enterprise-scale solutions' />
                 <SkillHighlight HighlightedText={`${Data.twitterFollowerCount.short}+`} SubTextHtml='Twitter followers' />
             </div>
-            <div className='katy'><img src={katy} alt="Katy"></img></div>
         </div>
     )
 }
