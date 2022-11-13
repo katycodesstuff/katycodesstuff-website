@@ -14,9 +14,17 @@ function About() {
     ];
 
     const [section, setSection] = useState<number>(0)
-    const [progressBarClass, setprogressBarClass] = useState<string>('about-section-progress-bar')
+    const [progressBarClass, setprogressBarClass] = useState<string>('about-section-animated')
     const [timeoutRef, setTimeoutRef] = useState<any>()
     const [pauseSection, setPauseSection] = useState<boolean>(false)
+
+    function pauseProgressBar() {
+        setprogressBarClass('about-section-paused')
+    }
+
+    function animateProgressBar() {
+        setprogressBarClass('about-section-animated')
+    }
 
     const changeSection = useCallback(() => {
         setSection((current) => {
@@ -28,48 +36,48 @@ function About() {
         })
         
     }, [content.length])
-    
+
     const pauseChangingSections = useCallback(() => {
         if (!pauseSection) {
             setPauseSection(true)
-            setprogressBarClass('about-section-paused')
+            pauseProgressBar()
             clearTimeout(timeoutRef)
-            console.log('Paused')
         }
     }, [pauseSection, timeoutRef])
 
     const resumeChangingSections = useCallback(() => {
         if (pauseSection) {
             setPauseSection(false)
-            changeSection()
-            setprogressBarClass('about-section-paused')
             setTimeout(() => { 
-                setprogressBarClass('about-section-animated')
+                animateProgressBar()
             }, 20)
-            console.log('Resumed')
         }
-    }, [pauseSection, changeSection])
+    }, [pauseSection])
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-           setprogressBarClass('')
-           setTimeout(() => { 
-               setprogressBarClass('about-section-animated')
-           }, 20)
-           changeSection()
+        if (!pauseSection) {
+            const timeout = setTimeout(() => {
+            setprogressBarClass('')
+            setTimeout(() => { 
+                animateProgressBar()
+                console.log('animate progress bar')
+            }, 20)
+            changeSection()
          }, timeoutSecs*1000)
          setTimeoutRef(timeout)
          return () => {
            clearTimeout(timeout)
-       }
-   }, [section, changeSection])
+        }
+      }
+    }, [section, changeSection, pauseSection])
 
     return (
         <div id='about'>
             <div className='about-container'>
                 <div className='about-section'
                     onMouseOver={() => pauseChangingSections()}
-                    onMouseLeave={() => resumeChangingSections()}>
+                    onMouseLeave={() => resumeChangingSections()}
+                    onClick={() => changeSection()}>
                     <h3>a bit about me... </h3>
                     <div>{content[section]}</div>
                     <div>
