@@ -8,6 +8,8 @@
     flex-basis: 1;
     min-width: 400px;
     max-width: 600px;
+    display: grid;
+    grid-template-rows: auto 260px 30px;
 }
 
 .about-section h3 {
@@ -58,6 +60,32 @@
     position: relative;
     margin: 20px;
     flex-shrink: 1 1 0;
+}
+
+.about-section-timeout-bar {
+    position: relative;
+    width: 80%;
+    height: 10px;
+    margin-left: 64px;
+    border-radius: 20px;
+    background-color: var(--secondary-colour);
+}
+
+.about-section-progress-bar {
+    position: relative;
+    top: -10px;
+    width: 80%;
+    height: 10px;
+    margin-left: 64px;
+    border-radius: 20px;
+    background-color: var(--primary-colour);
+    animation: progress 5s linear both
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
 }
 
 /* Mobile view */
