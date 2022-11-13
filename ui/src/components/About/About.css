@@ -79,7 +79,14 @@
     margin-left: 64px;
     border-radius: 20px;
     background-color: var(--primary-colour);
-    animation: progress 5s linear both
+}
+
+.about-section-animated {
+    animation: progress 10s linear both;
+}
+
+.about-section-paused {
+    display: none;
 }
 
 @keyframes progress {

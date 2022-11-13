@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 function About() {
 
-    const timeoutSecs = 5;
+    const timeoutSecs = 10;
     const content: JSX.Element[] = [
         Section1(),
         Section2(),
@@ -15,7 +15,9 @@ function About() {
 
     const [section, setSection] = useState<number>(0)
     const [progressBarClass, setprogressBarClass] = useState<string>('about-section-progress-bar')
-  
+    const [timeoutRef, setTimeoutRef] = useState<any>()
+    const [pauseSection, setPauseSection] = useState<boolean>(false)
+
     const changeSection = useCallback(() => {
         setSection((current) => {
             if (current + 1 < content.length) {
@@ -26,28 +28,53 @@ function About() {
         })
         
     }, [content.length])
+    
+    const pauseChangingSections = useCallback(() => {
+        if (!pauseSection) {
+            setPauseSection(true)
+            setprogressBarClass('about-section-paused')
+            clearTimeout(timeoutRef)
+            console.log('Paused')
+        }
+    }, [pauseSection, timeoutRef])
+
+    const resumeChangingSections = useCallback(() => {
+        if (pauseSection) {
+            setPauseSection(false)
+            changeSection()
+            setprogressBarClass('about-section-paused')
+            setTimeout(() => { 
+                setprogressBarClass('about-section-animated')
+            }, 20)
+            console.log('Resumed')
+        }
+    }, [pauseSection, changeSection])
 
     useEffect(() => {
         const timeout = setTimeout(() => {
-            setprogressBarClass('')
-            setTimeout(() => { 
-                setprogressBarClass('about-section-progress-bar')
-            }, 20)
-            changeSection()
-          }, timeoutSecs*1000);
-        
-          return () => clearTimeout(timeout);
-    }, [section, changeSection])
-    
+           setprogressBarClass('')
+           setTimeout(() => { 
+               setprogressBarClass('about-section-animated')
+           }, 20)
+           changeSection()
+         }, timeoutSecs*1000)
+         setTimeoutRef(timeout)
+         return () => {
+           clearTimeout(timeout)
+       }
+   }, [section, changeSection])
+
     return (
         <div id='about'>
             <div className='about-container'>
-                <div className='about-section'>
+                <div className='about-section'
+                    onMouseOver={() => pauseChangingSections()}
+                    onMouseLeave={() => resumeChangingSections()}>
                     <h3>a bit about me... </h3>
                     <div>{content[section]}</div>
                     <div>
                         <div className='about-section-timeout-bar'></div>
-                        <div className={`${progressBarClass}`}></div>
+                        <div className={`about-section-progress-bar ${progressBarClass}`}></div>
                     </div>
                 </div>
                 <div className='katy'><img src={katy} alt="Katy"></img></div>
