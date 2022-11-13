@@ -60,7 +60,6 @@ function About() {
             setprogressBarClass('')
             setTimeout(() => { 
                 animateProgressBar()
-                console.log('animate progress bar')
             }, 20)
             changeSection()
          }, timeoutSecs*1000)
@@ -74,13 +73,15 @@ function About() {
     return (
         <div id='about'>
             <div className='about-container'>
+                <span className='about-section-page'>{section+1} / {content.length}</span>
                 <div className='about-section'
                     onMouseOver={() => pauseChangingSections()}
                     onMouseLeave={() => resumeChangingSections()}
                     onClick={() => changeSection()}>
-                    <h3>a bit about me... </h3>
-                    <div>{content[section]}</div>
-                    <div>
+                    <h3>a bit about me...</h3>
+                    <div>{content[section]}
+                    </div>
+                    <div className='about-section-bar'>
                         <div className='about-section-timeout-bar'></div>
                         <div className={`about-section-progress-bar ${progressBarClass}`}></div>
                     </div>
